@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RepUp | The Ultimate AI Fitness App & Smart Nutrition Tracker</title>
+    <meta name="description"
+        content="Transform your physique with RepUp, the ultimate AI fitness ecosystem. Features include a smart nutrition scanner, AI chef, custom workout tracker, gamified progression, and exclusive RepCoach platform.">
+    <meta name="keywords"
+        content="AI fitness app, smart nutrition tracker, AI workout coach, fitness gamification, RepUp, calorie scanner, muscle tracking, gym app, personal trainer app, calisthenics routines">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="RepUp">
+    <meta name="language" content="English">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://repup.com/">
+    <meta property="og:title" content="RepUp | The Ultimate AI Fitness App & Smart Nutrition Tracker">
+    <meta property="og:description"
+        content="Transform your physique with RepUp. Features include an AI chef, custom workout tracker, gamified progression, and exclusive RepCoach platform.">
+    <meta property="og:image" content="https://repup.com/assets/app_mockup.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://repup.com/">
+    <meta property="twitter:title" content="RepUp | The Ultimate AI Fitness App & Smart Nutrition Tracker">
+    <meta property="twitter:description"
+        content="Transform your physique with RepUp. Features include an AI chef, custom workout tracker, gamified progression, and exclusive RepCoach platform.">
+    <meta property="twitter:image" content="https://repup.com/assets/app_mockup.png">
+
+    <!-- Theme Color for mobile browsers -->
+    <meta name="theme-color" content="#0A0B0C">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/Logo.png">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Premium Background Elements -->
+    <div class="bg-grid"></div>
+    <div class="ambient-glow-1"></div>
+    <div class="ambient-glow-2"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="assets/Logo.png" alt="RepUp Logo"
+                    style="height: 50px; width: 50px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary); margin-right: 12px;">
+                <span class="text-gradient">RepUp</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#nutrition">Nutrition</a>
+                <a href="#workouts">Workouts</a>
+                <a href="#team">Team</a>
+            </div>
+            <button class="mobile-menu-btn"><i class="ph ph-list"></i></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <!-- Background elements -->
+        <div class="hero-bg-overlay"></div>
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+
+        <div class="container hero-content">
+            <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+                <div class="hero-logo-wrapper">
+                    <div class="hero-logo-inner">
+                        <img src="assets/Logo.png" alt="RepUp Logo">
+                    </div>
+                </div>
+                <h1 class="hero-title"><span class="text-gradient">RepUp</span></h1>
+                <h2 class="hero-tagline">Revolutionising fitness.</h2>
+                <p class="hero-subtitle">RepUp integrates smart nutrition, structured workouts, and AI coaching with
+                    advanced gamification to transform your physique and lifestyle.</p>
+                <div class="hero-cta">
+                    <a href="#features" class="btn btn-primary btn-lg">Explore Features</a>
+                    <a href="#team" class="btn btn-secondary btn-lg"><i class="ph ph-users"></i> Meet the Team</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">4+</span>
+                        <span class="stat-label">Core Modules</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">AI</span>
+                        <span class="stat-label">Powered</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Personalized</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <div class="mobile-frame">
+                    <div class="screen-content" style="background-image: url('assets/screenshot/PROFILE.jpeg');"></div>
+                </div>
+                <div class="floating-badge badge-1">
+                    <i class="ph-fill ph-fire text-gradient"></i>
+                    <span>+450 XP Earned</span>
+                </div>
+                <div class="floating-badge badge-2">
+                    <i class="ph-fill ph-scan text-gradient"></i>
+                    <span>AI Body Scan Ready</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Overview -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Everything You Need <br>in <span class="text-gradient">One App</span></h2>
+                <p class="section-subtitle">Say goodbye to using five different apps. RepUp combines all essential
+                    fitness tools into one beautiful, gamified experience.</p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon"><i class="ph ph-robot"></i></div>
+                    <h3 class="feature-title">AI RepBot</h3>
+                    <p class="feature-desc">Your 24/7 personalized chat-based AI assistant. Get advice, generate custom
+                        workout plans, and track your streaks effortlessly.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="feature-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon"><i class="ph ph-users-three"></i></div>
+                    <h3 class="feature-title">RepCoach Platform</h3>
+                    <p class="feature-desc">Unlock exclusive content, structured programs, and tips from top coaches
+                        across Gym, Calisthenics, and more.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="feature-card glass-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon"><i class="ph ph-chart-polar"></i></div>
+                    <h3 class="feature-title">Advanced Analytics</h3>
+                    <p class="feature-desc">Visualize progress with our Muscle Spread Graph, monitor fatigue, and track
+                        workout intensity with heatmaps.</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="feature-card glass-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon"><i class="ph ph-game-controller"></i></div>
+                    <h3 class="feature-title">Gamified Progression</h3>
+                    <p class="feature-desc">Level up your fitness journey. Earn XP from workouts, hit milestones, and
+                        maintain day streaks to unlock rewards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI RepBot Section -->
+    <section class="section split-section reverse" id="repbot">
+        <div class="container split-container">
+            <div class="split-visual" data-aos="fade-left">
+                <div class="img-card">
+                    <div class="mobile-frame" style="transform: rotate(5deg);">
+                        <div class="screen-content" style="background-image: url('assets/screenshot/RepBot.jpeg');">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="split-content" data-aos="fade-right">
+                <div class="badge">AI Assistant</div>
+                <h2 class="section-title">Your 24/7 <span class="text-gradient">AI RepBot</span></h2>
+                <p class="section-desc">Get instant personalized advice, track your streaks, and generate dynamic
+                    workout plans directly through our advanced conversational AI.</p>
+
+                <ul class="feature-list">
+                    <li>
+                        <i class="ph-fill ph-chat-circle-text"></i>
+                        <div>
+                            <strong>Intelligent Chat</strong>
+                            <p>Ask anything about your fitness journey and get data-driven insights instantly.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="ph-fill ph-magic-wand"></i>
+                        <div>
+                            <strong>Dynamic Plans</strong>
+                            <p>Generate highly personalized workout routines tailored to your current progress.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nutrition Section -->
+    <section class="section split-section section-alt" id="nutrition">
+        <div class="container split-container">
+            <div class="split-visual" data-aos="fade-right">
+                <div class="img-card double-mobile">
+                    <div class="mobile-frame">
+                        <div class="screen-content"
+                            style="background-image: url('assets/screenshot/Daily%20Meal%20Tracking.jpeg');"></div>
+                    </div>
+                    <div class="mobile-frame">
+                        <div class="screen-content"
+                            style="background-image: url('assets/screenshot/AI%20Meal%20Maker.jpeg');"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="split-content" data-aos="fade-left">
+                <div class="badge">Nutrition</div>
+                <h2 class="section-title">Smart Nutrition & <span class="text-gradient">AI Chef</span></h2>
+                <p class="section-desc">Taking control of your diet has never been easier. Log your meals with
+                    cutting-edge AI or generate custom recipes based on what's in your fridge.</p>
+
+                <ul class="feature-list">
+                    <li>
+                        <i class="ph-fill ph-camera"></i>
+                        <div>
+                            <strong>AI Camera Scan</strong>
+                            <p>Instantly scan food for auto-calculated calories, protein, carbs, and fat.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="ph-fill ph-cooking-pot"></i>
+                        <div>
+                            <strong>AI Chef</strong>
+                            <p>Input available ingredients and your goal (Cut/Bulk) to get step-by-step recipes.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="ph-fill ph-chart-pie-slice"></i>
+                        <div>
+                            <strong>Daily Macros Tracking</strong>
+                            <p>Visual progress bars with real-time updates for your daily nutritional goals.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workouts & Tracking Section -->
+    <section class="section split-section reverse" id="workouts">
+        <div class="container split-container">
+            <div class="split-visual" data-aos="fade-left">
+                <div class="img-card double-mobile">
+                    <div class="mobile-frame">
+                        <div class="screen-content"
+                            style="background-image: url('assets/screenshot/Workout%201.jpeg');"></div>
+                    </div>
+                    <div class="mobile-frame">
+                        <div class="screen-content"
+                            style="background-image: url('assets/screenshot/Workout%202.jpeg');"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="split-content" data-aos="fade-right">
+                <div class="badge">Training</div>
+                <h2 class="section-title">Structured Workouts & <span class="text-gradient">Physique Vault</span></h2>
+                <p class="section-desc">Whether at the gym or home, execute your workouts with precision. Track every
+                    set, rep, and muscle engagement.</p>
+
+                <ul class="feature-list">
+                    <li>
+                        <i class="ph-fill ph-folder-open"></i>
+                        <div>
+                            <strong>Goal-Based Folders & Playlists</strong>
+                            <p>Organize routines for Hypertrophy, Strength, Push/Pull/Legs, and more.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="ph-fill ph-scan-smiley"></i>
+                        <div>
+                            <strong>AI Body Scan</strong>
+                            <p>Estimate body fat percentage and get instant AI-driven physique insights.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="ph-fill ph-images"></i>
+                        <div>
+                            <strong>Physique Vault</strong>
+                            <p>Securely store progress photos and track your visual transformation journey.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- RepCoach Section -->
+    <section class="section split-section section-alt" id="repcoach">
+        <div class="container split-container">
+            <div class="split-visual" data-aos="fade-right">
+                <div class="img-card double-mobile">
+                    <div class="mobile-frame">
+                        <div class="screen-content"
+                            style="background-image: url('assets/screenshot/RepCoach%20Announcement.jpeg');"></div>
+                    </div>
+                    <div class="mobile-frame">
+                        <div class="screen-content" style="background-image: url('assets/screenshot/RepCoach.jpeg');">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="split-content" data-aos="fade-left">
+                <div class="badge">Coaching</div>
+                <h2 class="section-title">Exclusive <span class="text-gradient">RepCoach Platform</span></h2>
+                <p class="section-desc">Unlock premium coaching content, structured programs, and exclusive resources
+                    from top influencers and trainers.</p>
+
+                <ul class="feature-list">
+                    <li>
+                        <i class="ph-fill ph-lock-key"></i>
+                        <div>
+                            <strong>Private Access</strong>
+                            <p>Unlock coach-specific workouts and exclusive categories securely via passwords.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="ph-fill ph-playlist"></i>
+                        <div>
+                            <strong>Structured Playlists</strong>
+                            <p>Follow expertly designed training programs customized for Gym, Calisthenics, Boxing, and
+                                more.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="ph-fill ph-megaphone"></i>
+                        <div>
+                            <strong>RepCoach Resources</strong>
+                            <p>Stay updated with announcements, tips, advice, and video links shared directly by your
+                                coach.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analytics & Gamification Section -->
+    <section class="section split-section reverse" id="analytics">
+        <div class="container split-container">
+            <div class="split-visual" data-aos="fade-left">
+                <div class="img-card">
+                    <div class="mobile-frame" style="transform: rotate(5deg);">
+                        <div class="screen-content"
+                            style="background-image: url('assets/screenshot/Muscle%20Ranking%20gamificaiton.jpeg');">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="split-content" data-aos="fade-right">
+                <div class="badge">Analytics</div>
+                <h2 class="section-title">Advanced <span class="text-gradient">Analytics</span></h2>
+                <p class="section-desc">Visualize your hard work with our premium tracking tools. Monitor fatigue, track
+                    intensity, and level up your muscle groups.</p>
+
+                <ul class="feature-list">
+                    <li>
+                        <i class="ph-fill ph-chart-polar"></i>
+                        <div>
+                            <strong>Muscle Spread Graph</strong>
+                            <p>See exactly which muscles you've engaged and balance your physique intuitively.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="ph-fill ph-sword"></i>
+                        <div>
+                            <strong>Gamified Progression</strong>
+                            <p>Earn XP, hit new levels, and maintain your workout streaks to stay relentlessly
+                                motivated.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- RepCoaches Section -->
+    <section class="section team-section section-alt" id="coaches">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2 class="section-title">Our <span class="text-gradient">RepCoaches</span></h2>
+                <p class="section-subtitle">Learn from the best to become your best.</p>
+            </div>
+
+            <div class="coach-grid">
+                <!-- ==============================================
+                     COACH CARD TEMPLATE 
+                     (Copy this block to add a new coach)
+                     ============================================== -->
+                <div class="coach-card glass-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="coach-img-wrapper">
+                        <!-- Image must be in assets/coaches folder -->
+                        <img src="assets/Coaches/Dilip%20K.png" alt="Dilip K">
+                    </div>
+                    <div class="coach-info">
+                        <h3 class="coach-name">Dilip K</h3>
+                        <p class="coach-role">Joined 4 May 2026</p>
+                    </div>
+                </div>
+                <!-- ==============================================
+                     END COACH CARD TEMPLATE
+                     ============================================== -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section team-section section-alt" id="team">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2 class="section-title">Meet the <span class="text-gradient">Founders</span></h2>
+                <p class="section-subtitle">The visionary minds behind the ultimate fitness ecosystem.</p>
+            </div>
+
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <div class="team-card glass-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="team-img-wrapper">
+                        <img src="assets/Niranjan.jpeg" alt="Niranjan S Prasanth"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Niranjan S Prasanth</h3>
+                        <p class="team-role text-gradient">CTO, Co-Founder</p>
+                        <p class="team-bio">Leading the technical architecture and AI integration to bring RepUp's
+                            vision to life.</p>
+                        <div class="team-socials">
+                            <a href="https://www.instagram.com/niranjansprasanth/" class="social-link" target="_blank"
+                                title="Instagram">
+                                <i class="ph-fill ph-instagram-logo"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="team-card glass-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="team-img-wrapper">
+                        <img src="assets/Nandakishor.jpg" alt="Nandakishor PV"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Nandakishor PV</h3>
+                        <p class="team-role text-gradient">CMO, Co-Founder</p>
+                        <p class="team-bio">Driving the brand strategy, user growth, and market positioning for RepUp.
+                        </p>
+                        <div class="team-socials">
+                            <a href="https://www.instagram.com/lmnandu/" class="social-link" target="_blank"
+                                title="Instagram">
+                                <i class="ph-fill ph-instagram-logo"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2 class="section-title">Get in <span class="text-gradient">Touch</span></h2>
+                <p class="section-subtitle">Have questions or want to partner with us? Drop us a message.</p>
+            </div>
+
+            <div class="contact-form-container glass-card" data-aos="fade-up" data-aos-delay="100"
+                style="max-width: 600px; margin: 0 auto; padding: 3rem;">
+                <form id="contact-form" action="https://formsubmit.co/ajax/repupofficial@gmail.com" method="POST"
+                    class="contact-form">
+                    <input type="hidden" name="_subject" value="New Contact from RepUp Website!">
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <div class="form-group" style="margin-bottom: 1.5rem;">
+                        <label for="name"
+                            style="display: block; margin-bottom: 0.5rem; color: var(--text-muted);">Name</label>
+                        <input type="text" id="name" name="name" required class="form-input" placeholder="Your Name">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 1.5rem;">
+                        <label for="email"
+                            style="display: block; margin-bottom: 0.5rem; color: var(--text-muted);">Email</label>
+                        <input type="email" id="email" name="email" required class="form-input"
+                            placeholder="Your Email">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 2rem;">
+                        <label for="message"
+                            style="display: block; margin-bottom: 0.5rem; color: var(--text-muted);">Message</label>
+                        <textarea id="message" name="message" rows="5" required class="form-input"
+                            placeholder="Your Message" style="resize: vertical;"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Send Message</button>
+                    <div id="form-status"
+                        style="margin-top: 1.5rem; text-align: center; display: none; font-size: 1.1rem; padding: 1rem; border-radius: 12px; font-weight: 500; border: 1px solid transparent;">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="assets/Logo.png" alt="RepUp Logo"
+                            style="height: 50px; width: 50px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary); margin-right: 12px;">
+                        <span class="text-gradient">RepUp</span>
+                    </a>
+                    <p>The complete feature-rich ecosystem for nutrition, workouts, and AI coaching.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Platform</h4>
+                        <a href="#features">Features</a>
+                        <a href="#nutrition">Nutrition</a>
+                        <a href="#workouts">Workouts</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Company</h4>
+                        <a href="#team">About Team</a>
+                        <a href="#contact">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 RepUp. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
